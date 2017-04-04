@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"npmrc",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "npmrc",
+    "description": "api documentation for [npmrc (v1.1.1)](https://github.com/deoxxa/npmrc) [![npm package](https://img.shields.io/npm/v/npmdoc-npmrc.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npmrc) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npmrc.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npmrc)",
     "devDependencies": {
-        "npmrc": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "npmrc": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-npmrc",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-npmrc",
+    "keywords": [
+        "documentation",
+        "npmrc"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_npmrc.js",
+    "name": "npmdoc-npmrc",
+    "nameAlias": "npmdoc_npmrc",
+    "nameOriginal": "npmdoc-npmrc",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-npmrc.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
