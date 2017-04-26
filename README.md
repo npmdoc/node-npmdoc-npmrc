@@ -1,6 +1,6 @@
 # npmdoc-npmrc
 
-#### api documentation for  [npmrc (v1.1.1)](https://github.com/deoxxa/npmrc)  [![npm package](https://img.shields.io/npm/v/npmdoc-npmrc.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npmrc) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npmrc.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npmrc)
+#### basic api documentation for  [npmrc (v1.1.1)](https://github.com/deoxxa/npmrc)  [![npm package](https://img.shields.io/npm/v/npmdoc-npmrc.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npmrc) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npmrc.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npmrc)
 
 #### Switch between different .npmrc files with ease and grace
 
